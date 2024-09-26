@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration name="appturbo" brand="infinix" version="2">
+  <tpturbo>
+    <package name="com.facebook.katana"   touchslop="0" friction="80" xvelocity="100" yvelocity="150"/>
+    <package name="com.instagram.android"  touchslop="0" friction="80" xvelocity="100" yvelocity="150" />
+    <package name="com.google.android.youtube"  touchslop="0" friction="80" xvelocity="100" yvelocity="150" />
+    <package name="com.zhiliaoapp.musically"  touchslop="0" friction="80" xvelocity="100" yvelocity="150" />
+    <package name="com.opera.mini.native"  touchslop="0" friction="80" xvelocity="100" yvelocity="150"/>
+    <package name="com.opera.browser"  touchslop="0" friction="80" xvelocity="100" yvelocity="150"/>
+    <package name="com.opera.app.news"  touchslop="0" friction="80" xvelocity="100" yvelocity="150"/>
+    <package name="video.like"   touchslop="0" friction="80" xvelocity="100" yvelocity="150" />
+    <package name="com.tencent.ig"   touchslop="0" friction="100" xvelocity="150" yvelocity="150" />
+    <package name="com.tencent.tmgp.pubgmhd"  touchslop="0" friction="100" xvelocity="150" yvelocity="150" />
+    <package name="com.transsion.hilauncher"  touchslop="0" friction="100" xvelocity="200" yvelocity="150" />
+    <package name="com.transsion.XOSLauncher"  touchslop="0" friction="100" xvelocity="200" yvelocity="150" />
+    <package name="com.tencent.wework"  touchslop="0" friction="70" xvelocity="100" yvelocity="150" />
+    <package name="com.tencent.mm"  touchslop="0" friction="70" xvelocity="100" yvelocity="150" />
+    <package name="com.android.settings"  touchslop="0" friction="70" xvelocity="100" yvelocity="150" />
+    <!-- SPD: add Launcher by zhanwei.bai 20220328 start -->
+    <package name="com.transsion.hilauncher.upgrade"  touchslop="0" friction="100" xvelocity="200" yvelocity="100" />
+    <package name="com.transsion.XOSLauncher.upgrade"  touchslop="0" friction="100" xvelocity="200" yvelocity="100" />
+    <!-- SPD: add Launcher by zhanwei.bai 20220328 end -->
+  </tpturbo>
+  <!-- SPD: add Agares NFRFP-1485 by jian.tang 20200710 start -->
+  <agares>
+    <keyvalue name="agares_enable"  value="true"/>
+  <!-- SPD: add Agares NFRFP-1485 by jian.tang 20201124 start -->
+    <keyvalue name="memory_rate_threshold"  value="0.45"/>
+    <keyvalue name="memory_value_threshold"  value="2000000000" />
+  <!-- SPD: add Agares NFRFP-1485 by jian.tang 20201124 end -->
+    <keyvalue name="cpu_rate_threshold"  value="0.35" />
+    <package name="com.mobile.legends" />
+    <package name="com.miHoYo.GenshinImpact" />
+    <package name="org.telegram.messenger" />
+    <package name="com.ea.gp.fifamobile" />
+    <package name="com.HoYoverse.Nap" />
+    <package name="com.YoStarEN.Arknights" />
+    <package name="com.google.android.youtube" />
+    <package name="com.garena.game.codm" />
+    <package name="com.levelinfinite.sgameGlobal" />
+    <package name="com.pubg.imobile" />
+    <package name="jp.konami.pesam" />
+  </agares>
+  <!-- SPD: add Agares NFRFP-1485 by jian.tang 20200710 end -->
+</configuration>
