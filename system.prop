@@ -147,6 +147,7 @@ doze.shake.acc.threshold=10
 doze.vibrate.sigmotion=0
 debug.doze.component=0
 
+ro.tran_low_battery_60_hz_refresh_rate.support=0
 ro.surface_flinger.set_idle_timer_ms=1000
 sys.surfaceflinger.idle_reduce_framerate_enable=yes
 ro.product.apm=1
