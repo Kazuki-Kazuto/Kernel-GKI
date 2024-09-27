@@ -71,7 +71,6 @@ resetprop -n debug.sf.early_gl_app_phase_offset_ns 15000000
 resetprop -n debug.sf.early_gl_phase_offset_ns 3000000
 resetprop -n debug.sf.early_phase_offset_ns 500000
 resetprop -n debug.sf.high_fps_early_gl_phase_offset_ns 650000
-ro.tran_low_battery_60hz_refresh_rate.support=0
 write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
 write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor performance
 write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor performance
