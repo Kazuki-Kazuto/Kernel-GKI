@@ -79,9 +79,9 @@ echo "performance" /sys/devices/system/cpu/cpufreq/policy0/scaling_governor perf
 echo "performance" /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
 echo "0" > /sys/devices/system/cpu/cpufreq/performance/above_hispeed_delay 
 echo "1" > /sys/devices/system/cpu/cpufreq/performance/boost 
-echo "75" > /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/go_hispeed_load 75
-echo "1" > /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/max_freq_hysteresis 1
-echo "1" > /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/align_windows 1
-echo "0" > /sys/module/msm_performance/parameters/touchboost  /sys/module/adreno_idler/parameters/adreno_idler_active 0
-echo "8" > /sys/module/msm_performance/parameters/touchboost  /sys/module/lazyplug/parameters/nr_possible_cores 8
+echo "75" > /sys/devices/system/cpu/cpufreq/performance/go_hispeed_load
+echo "1" > /sys/devices/system/cpu/cpufreq/performance/max_freq_hysteresis 
+echo "1" >/sys/devices/system/cpu/cpufreq/performance/align_windows 
+echo "0" > /sys/module/adreno_idler/parameters/adreno_idler_active 
+echo "8" > /sys/module/lazyplug/parameters/nr_possible_cores 
 echo "1" > /sys/module/msm_performance/parameters/touchboost 
