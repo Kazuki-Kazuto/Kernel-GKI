@@ -71,17 +71,17 @@ resetprop -n debug.sf.early_gl_app_phase_offset_ns 15000000
 resetprop -n debug.sf.early_gl_phase_offset_ns 3000000
 resetprop -n debug.sf.early_phase_offset_ns 500000
 resetprop -n debug.sf.high_fps_early_gl_phase_offset_ns 650000
-write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
-write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor performance
-write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor performance
-write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor performance
-write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
-write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
-write /sys/devices/system/cpu/cpufreq/performance/above_hispeed_delay 0
-write /sys/devices/system/cpu/cpufreq/performance/boost 1
-write /sys/devices/system/cpu/cpufreq/performance/go_hispeed_load 75
-write /sys/devices/system/cpu/cpufreq/performance/max_freq_hysteresis 1
-write /sys/devices/system/cpu/cpufreq/performance/align_windows 1
-write /sys/module/adreno_idler/parameters/adreno_idler_active 0
-write /sys/module/lazyplug/parameters/nr_possible_cores 8
-write /sys/module/msm_performance/parameters/touchboost 1
+echo "performance" /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 
+echo "performance" /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor 
+echo "performance" /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor 
+echo performance1" /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor 
+echo "performance" /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
+echo "performance" /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
+echo "0" /sys/devices/system/cpu/cpufreq/performance/above_hispeed_delay 
+echo "1" /sys/devices/system/cpu/cpufreq/performance/boost 
+echo "75" /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/go_hispeed_load 75
+echo "1" /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/max_freq_hysteresis 1
+echo "1" /sys/module/msm_performance/parameters/touchboost  /sys/devices/system/cpu/cpufreq/performance/align_windows 1
+echo "0" /sys/module/msm_performance/parameters/touchboost  /sys/module/adreno_idler/parameters/adreno_idler_active 0
+echo "8" /sys/module/msm_performance/parameters/touchboost  /sys/module/lazyplug/parameters/nr_possible_cores 8
+echo "1" /sys/module/msm_performance/parameters/touchboost 
