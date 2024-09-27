@@ -74,7 +74,7 @@ resetprop -n debug.sf.high_fps_early_gl_phase_offset_ns 650000
 echo "performance" /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 
 echo "performance" /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor 
 echo "performance" /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor 
-echo performance1" /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor 
+echo "performance" /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor 
 echo "performance" /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
 echo "performance" /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
 echo "0" > /sys/devices/system/cpu/cpufreq/performance/above_hispeed_delay 
