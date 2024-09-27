@@ -9,7 +9,7 @@ MODDIR=${0%/*}
 #!/system/bin/sh
 
 # ~
-echo 0 >/sys/kernel/printk_mode/printk_mode
+echo 0 >/sys/module/mtk_printk_ctrl/parameters/disable_uart
 echo 0 >/proc/sys/kernel/panic
 echo 0 >/proc/sys/kernel/panic_on_oops
 echo 0 >/proc/sys/kernel/panic_on_rcu_stall
@@ -23,8 +23,6 @@ echo 0 >/sys/module/kernel/parameters/panic
 echo 0 >/sys/module/kernel/parameters/panic_on_warn
 # ~
 echo 1 > /sys/devices/system/cpu/perf/enable
-# ~
-echo 0 > /sys/kernel/oppo_display/LCM_CABC
 # ~
 echo 0 > /sys/kernel/ccci/debug
 # ~
