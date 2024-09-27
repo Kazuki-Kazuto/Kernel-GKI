@@ -71,12 +71,12 @@ resetprop -n debug.sf.early_gl_app_phase_offset_ns 15000000
 resetprop -n debug.sf.early_gl_phase_offset_ns 3000000
 resetprop -n debug.sf.early_phase_offset_ns 500000
 resetprop -n debug.sf.high_fps_early_gl_phase_offset_ns 650000
-echo "performance" /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 
-echo "performance" /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor 
-echo "performance" /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor 
-echo "performance" /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor 
-echo "performance" /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
-echo "performance" /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
+echo "performance" > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor 
+echo "performance" > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor 
+echo "performance" > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor 
+echo "performance" > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor 
+echo "performance" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor performance
+echo "performance" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor performance
 echo "0" > /sys/devices/system/cpu/cpufreq/performance/above_hispeed_delay 
 echo "1" > /sys/devices/system/cpu/cpufreq/performance/boost 
 echo "75" > /sys/devices/system/cpu/cpufreq/performance/go_hispeed_load
