@@ -21,13 +21,6 @@ echo "0" > /proc/sys/kernel/perf_cpu_time_max_percent
 echo "0" > /proc/sys/kernel/sched_tunable_scaling
 echo 0 >/sys/module/kernel/parameters/panic
 echo 0 >/sys/module/kernel/parameters/panic_on_warn
-echo 0 >/sys/module/kernel/parameters/panic_on_oops
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_fps_60
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_fps_120
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_fps_144
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_tolerance_percent
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_fps_90
-echo "0" > /proc/perfmgr/syslimiter/syslimiter_limit_freq
 # ~
 echo 1 > /sys/devices/system/cpu/perf/enable
 # ~
@@ -47,9 +40,15 @@ echo "performance" > /sys/devices/system/cpu/cpufreq/policy6/scaling_governor
 echo '0' > /sys/devices/system/cpu/isolated
 echo '0' > /sys/devices/system/cpu/offline
 echo '0' > /sys/devices/system/cpu/uevent
-echo '1' > /sys/devices/system/cpu/cpufreq/policy0/schedutil/iowait_boost_enable
-echo '1' > /sys/devices/system/cpu/cpufreq/policy4/schedutil/iowait_boost_enable
 echo '1' > /sys/devices/system/cpu/sched/cpu_prefer
+echo "1" > /sys/devices/system/cpu/cpu0/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu1/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu2/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu3/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu4/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu5/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu6/hotplug/target
+echo "1" > /sys/devices/system/cpu/cpu7/hotplug/target
 # ~
 for i in /sys/block/*/queue/scheduler; do
   echo "noop" > "$i"
